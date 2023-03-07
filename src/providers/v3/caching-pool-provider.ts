@@ -1,5 +1,5 @@
+import { FeeAmount, Pool } from '@intrinsic-network/intrinsic-sdk';
 import { Token } from '@uniswap/sdk-core';
-import { FeeAmount, Pool } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 
 import { ChainId } from '../../util/chains';

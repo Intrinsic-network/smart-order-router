@@ -60,7 +60,7 @@ import {
   FeeAmount,
   MethodParameters,
   Pool,
-} from '@uniswap/v3-sdk';
+} from '@intrinsic-network/intrinsic-sdk';
 import { BigNumber, providers } from 'ethers';
 import { parseEther } from 'ethers/lib/utils';
 import _ from 'lodash';

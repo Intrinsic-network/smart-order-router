@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber';
+import { Pool } from '@intrinsic-network/intrinsic-sdk';
 import { Percent, TradeType } from '@uniswap/sdk-core';
-import { Pool } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 
 import { SwapOptions, WRAPPED_NATIVE_CURRENCY } from '../../../..';

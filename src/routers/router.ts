@@ -1,5 +1,11 @@
 import { BigNumber } from '@ethersproject/bignumber';
 import {
+  MethodParameters,
+  Pool,
+  Position,
+  Route as V3RouteRaw,
+} from '@intrinsic-network/intrinsic-sdk';
+import {
   CondensedAddLiquidityOptions,
   MixedRouteSDK,
   Protocol,
@@ -13,12 +19,6 @@ import {
   TradeType,
 } from '@uniswap/sdk-core';
 import { Route as V2RouteRaw } from '@uniswap/v2-sdk';
-import {
-  MethodParameters,
-  Pool,
-  Position,
-  Route as V3RouteRaw,
-} from '@uniswap/v3-sdk';
 
 import { CurrencyAmount } from '../util/amounts';
 

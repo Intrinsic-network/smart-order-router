@@ -1,6 +1,10 @@
 import { BigNumber } from '@ethersproject/bignumber';
+import {
+  computePoolAddress,
+  FeeAmount,
+  Pool,
+} from '@intrinsic-network/intrinsic-sdk';
 import { Token } from '@uniswap/sdk-core';
-import { computePoolAddress, FeeAmount, Pool } from '@uniswap/v3-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 

@@ -1,8 +1,12 @@
 import { BigNumber } from '@ethersproject/bignumber';
+import {
+  FeeAmount,
+  MethodParameters,
+  Pool,
+} from '@intrinsic-network/intrinsic-sdk';
 import { Protocol } from '@uniswap/router-sdk';
 import { Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core';
 import { Pair } from '@uniswap/v2-sdk/dist/entities';
-import { FeeAmount, MethodParameters, Pool } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 
 import { IV2PoolProvider } from '../providers';

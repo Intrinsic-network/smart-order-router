@@ -1,5 +1,5 @@
 import { Token, TradeType } from '@uniswap/sdk-core';
-import { encodeSqrtRatioX96, FeeAmount, Pool } from '@uniswap/v3-sdk';
+import { encodeSqrtRatioX96, FeeAmount, Pool } from '@intrinsic-network/intrinsic-sdk';
 import _ from 'lodash';
 import sinon from 'sinon';
 import {

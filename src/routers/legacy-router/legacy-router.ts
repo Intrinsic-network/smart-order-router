@@ -1,8 +1,13 @@
 import { BigNumber } from '@ethersproject/bignumber';
 import { Logger } from '@ethersproject/logger';
+import {
+  FeeAmount,
+  MethodParameters,
+  Pool,
+  Route,
+} from '@intrinsic-network/intrinsic-sdk';
 import { SwapRouter, Trade } from '@uniswap/router-sdk';
 import { Currency, Token, TradeType } from '@uniswap/sdk-core';
-import { FeeAmount, MethodParameters, Pool, Route } from '@uniswap/v3-sdk';
 import _ from 'lodash';
 import { IOnChainQuoteProvider, RouteWithQuotes } from '../../providers';
 

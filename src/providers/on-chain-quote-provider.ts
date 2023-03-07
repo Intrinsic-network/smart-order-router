@@ -1,11 +1,11 @@
 import { BigNumber } from '@ethersproject/bignumber';
 import { BaseProvider } from '@ethersproject/providers';
+import { encodeRouteToPath } from '@intrinsic-network/intrinsic-sdk';
 import {
   encodeMixedRouteToPath,
   MixedRouteSDK,
   Protocol,
 } from '@uniswap/router-sdk';
-import { encodeRouteToPath } from '@uniswap/v3-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 import stats from 'stats-lite';
@@ -21,6 +21,7 @@ import {
 import { CurrencyAmount } from '../util/amounts';
 import { log } from '../util/log';
 import { routeToString } from '../util/routes';
+
 import { Result } from './multicall-provider';
 import { UniswapMulticallProvider } from './multicall-uniswap-provider';
 import { ProviderConfig } from './provider';
