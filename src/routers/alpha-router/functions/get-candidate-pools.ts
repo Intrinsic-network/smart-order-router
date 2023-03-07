@@ -1,5 +1,5 @@
 import { FeeAmount } from '@intrinsic-network/intrinsic-sdk';
-import { Protocol } from '@uniswap/router-sdk';
+import { Protocol } from '@intrinsic-network/router-sdk';
 import { Token, TradeType } from '@uniswap/sdk-core';
 import _ from 'lodash';
 

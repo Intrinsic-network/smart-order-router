@@ -1,6 +1,7 @@
 import { Pool } from '@intrinsic-network/intrinsic-sdk';
 import { Token } from '@uniswap/sdk-core';
 import { Pair } from '@uniswap/v2-sdk';
+
 import { log } from '../../../util/log';
 import { routeToString } from '../../../util/routes';
 import { MixedRoute, V2Route, V3Route } from '../../router';
@@ -49,7 +50,7 @@ export function computeAllMixedRoutes(
     tokenIn,
     tokenOut,
     (route: (Pool | Pair)[], tokenIn: Token, tokenOut: Token) => {
-      return new MixedRoute(route, tokenIn, tokenOut);
+      return new MixedRoute(route as any, tokenIn, tokenOut);
     },
     parts,
     maxHops

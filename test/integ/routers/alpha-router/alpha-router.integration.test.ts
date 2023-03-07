@@ -53,7 +53,7 @@ import { WHALES } from '../../../test-util/whales';
 import 'jest-environment-hardhat';
 
 import { JsonRpcProvider, JsonRpcSigner } from '@ethersproject/providers';
-import { Protocol } from '@uniswap/router-sdk';
+import { Protocol } from '@intrinsic-network/router-sdk';
 import { Pair } from '@uniswap/v2-sdk';
 import {
   encodeSqrtRatioX96,

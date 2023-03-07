@@ -1,5 +1,5 @@
 import { Pool } from '@intrinsic-network/intrinsic-sdk';
-import { Protocol } from '@uniswap/router-sdk';
+import { Protocol } from '@intrinsic-network/router-sdk';
 import { Percent } from '@uniswap/sdk-core';
 import { Pair } from '@uniswap/v2-sdk';
 import _ from 'lodash';

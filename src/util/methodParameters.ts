@@ -7,7 +7,7 @@ import {
   Protocol,
   SwapRouter,
   Trade,
-} from '@uniswap/router-sdk';
+} from '@intrinsic-network/router-sdk';
 import { Currency, TradeType } from '@uniswap/sdk-core';
 import { Route as V2RouteRaw } from '@uniswap/v2-sdk';
 import _ from 'lodash';
@@ -219,7 +219,12 @@ export function buildTrade<TTradeType extends TradeType>(
     }
   );
 
-  const trade = new Trade({ v2Routes, v3Routes, mixedRoutes, tradeType });
+  const trade = new Trade({
+    v2Routes,
+    v3Routes: v3Routes as any,
+    mixedRoutes,
+    tradeType,
+  });
 
   return trade;
 }

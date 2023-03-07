@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber';
 import { BaseProvider } from '@ethersproject/providers';
-import { Protocol, SwapRouter } from '@uniswap/router-sdk';
+import { Protocol, SwapRouter } from '@intrinsic-network/router-sdk';
 import { Fraction, Percent, TradeType } from '@uniswap/sdk-core';
 import { Pair } from '@uniswap/v2-sdk';
 import { encodeSqrtRatioX96, Pool, Position } from '@intrinsic-network/intrinsic-sdk';

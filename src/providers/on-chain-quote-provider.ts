@@ -5,7 +5,7 @@ import {
   encodeMixedRouteToPath,
   MixedRouteSDK,
   Protocol,
-} from '@uniswap/router-sdk';
+} from '@intrinsic-network/router-sdk';
 import retry, { Options as RetryOptions } from 'async-retry';
 import _ from 'lodash';
 import stats from 'stats-lite';

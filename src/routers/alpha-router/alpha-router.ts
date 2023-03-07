@@ -7,8 +7,8 @@ import {
   SqrtPriceMath,
   TickMath,
 } from '@intrinsic-network/intrinsic-sdk';
+import { Protocol, SwapRouter, Trade } from '@intrinsic-network/router-sdk';
 import DEFAULT_TOKEN_LIST from '@uniswap/default-token-list';
-import { Protocol, SwapRouter, Trade } from '@uniswap/router-sdk';
 import { Currency, Fraction, Token, TradeType } from '@uniswap/sdk-core';
 import { TokenList } from '@uniswap/token-lists';
 import { Pair } from '@uniswap/v2-sdk';
@@ -1700,7 +1700,7 @@ export class AlphaRouter
         deadlineOrPreviousBlockhash: deadline,
         inputTokenPermit,
       },
-      Position.fromAmounts({
+      (Position as any).fromAmounts({
         pool: preLiquidityPosition.pool,
         tickLower: preLiquidityPosition.tickLower,
         tickUpper: preLiquidityPosition.tickUpper,

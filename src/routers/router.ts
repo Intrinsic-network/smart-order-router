@@ -10,7 +10,7 @@ import {
   MixedRouteSDK,
   Protocol,
   Trade,
-} from '@uniswap/router-sdk';
+} from '@intrinsic-network/router-sdk';
 import {
   Currency,
   Fraction,

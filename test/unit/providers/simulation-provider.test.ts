@@ -1,5 +1,5 @@
 import { JsonRpcProvider } from "@ethersproject/providers"
-import { Trade } from "@uniswap/router-sdk"
+import { Trade } from "@intrinsic-network/router-sdk"
 import { BigNumber } from "ethers"
 import sinon from "sinon";
 import { TenderlySimulator, FallbackTenderlySimulator, V2PoolProvider, V3PoolProvider, SwapRoute, CurrencyAmount, RouteWithValidQuote } from "../../../src"

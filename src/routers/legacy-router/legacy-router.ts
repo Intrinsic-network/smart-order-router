@@ -6,11 +6,11 @@ import {
   Pool,
   Route,
 } from '@intrinsic-network/intrinsic-sdk';
-import { SwapRouter, Trade } from '@uniswap/router-sdk';
+import { SwapRouter, Trade } from '@intrinsic-network/router-sdk';
 import { Currency, Token, TradeType } from '@uniswap/sdk-core';
 import _ from 'lodash';
-import { IOnChainQuoteProvider, RouteWithQuotes } from '../../providers';
 
+import { IOnChainQuoteProvider, RouteWithQuotes } from '../../providers';
 import { IMulticallProvider } from '../../providers/multicall-provider';
 import {
   DAI_MAINNET,
@@ -499,7 +499,7 @@ export class LegacyRouter implements IRouter<LegacyRoutingConfig> {
       return new Trade({
         v3Routes: [
           {
-            routev3: routeCurrency,
+            routev3: routeCurrency as any,
             inputAmount: amountCurrency,
             outputAmount: quoteCurrency,
           },
@@ -529,7 +529,7 @@ export class LegacyRouter implements IRouter<LegacyRoutingConfig> {
       return new Trade({
         v3Routes: [
           {
-            routev3: routeCurrency,
+            routev3: routeCurrency as any,
             inputAmount: quoteCurrency,
             outputAmount: amountCurrency,
           },
